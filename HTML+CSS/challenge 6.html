@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid challenge</title>
+</head>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns:200px 200px 200px ;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(200px,auto);
+            /* grid-auto-columns: minmax(200px,auto); */
+            /* grid-auto-columns: minmax(200px,auto); */
+            grid-gap: 7px;
+            /* grid-auto-columns: 600px; */
+            /* overflow: 200px; */
+
+        }
+
+        .items{
+            background-color: gold;
+            border: 3px ;
+            border-radius: 3px;
+            /* height: 50px; */
+            /* text-align: center; */
+            font-size: 20px;
+            font-family: serif;
+            font-weight: bolder;
+          
+            /* background-color: green; */
+            /* padding: 5px; */
+            
+
+        }
+        #item-1{
+            grid-row-start:1;
+            grid-row-end:7;
+            
+
+        }
+        #item-2{
+            grid-column-start:2;
+            grid-column-end:7;
+
+        }
+        #item-3{
+            grid-column-start:2;
+            grid-column-end:6;
+            grid-row-start:2;
+            grid-row-end:6;
+            /* grid-auto-rows: minmax(100px,300px);
+            grid-auto-columns: minmax(200px,300px); */
+           
+        }
+        #item-4{
+            grid-column-start:2;
+            grid-column-end:7;
+        }
+        #item-5{
+            grid-row-start:2;
+            grid-row-end:6;
+        }
+        .cent{
+            position: relative;
+            top: 50%;
+        }
+       
+    </style>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">nav gfghjhnlkj jidj ijipkjdg jdjfp j </div>
+           
+        <div class="items" id="item-2">Header </div>
+        <div class="items" id="item-3" ><div class="cent">abcd so he s fdfdg grfg hfrghfghrfh  gbrfg hrf gdg ggd  fe ge grg gg grtgeg ge gte et edg gfedg geg ege get3g grgerte feretd fere efe gege gege gee ggggggggggggggggggggggge ffffffffffffffffffffff edddddddddddddddd rffff aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet incidunt blanditiis sequi ad mollitia est repellendus aspernatur neque. Quod repellat ex atque rerum cum, corporis sit recusandae magni repudiandae? lorem100 <br> <pr>.</p></div> </div>
+        <div class="items" id="item-4" >Footer </div>
+        <div class="items" id="item-5">Ads </div>
+        </div>
+
+    
+</body>
+</html>

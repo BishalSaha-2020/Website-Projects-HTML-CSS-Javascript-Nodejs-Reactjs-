@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+
+    <style>
+        .container{
+            font-size: 20px;
+            background-color: gold;
+            border:2px solid grey;
+            padding: 35px;
+            margin: 5px;
+            text-align: center;
+            /* float: right; */
+            
+        }
+
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        Current Time is <span id="time"></span>
+    </div>
+    <h1>This is Bishal</h1>
+    <button><a href="position.html">PRESS</a> </button>
+    <script>
+        console.log("This is date and time");
+        let noww=new Date();
+        console.log(noww);
+
+        let dt=new Date(1000);
+        console.log(dt);
+
+        let newDates=new Date("2021-07-24");
+        console.log(newDates);
+
+        //year,month,date,houe,minutes,sec,milisec
+        let newDateso=new Date(3050,4,9,5,50,3,1);
+        console.log(newDateso);
+
+        //newDate.getDate(),newDate.getMonth(),newDate.getHours(),getDay()
+
+        let yr=newDateso.getFullYear();
+        console.log(yr);
+
+        let dy=newDateso.getDay();
+        console.log(dy);
+
+        newDateso.setDate(39);
+        console.log(newDateso);
+
+        setInterval(updateTime,1000);
+
+        function updateTime(){
+            time.innerHTML=new Date()
+        }
+    
+    </script>
+</body>
+</html>

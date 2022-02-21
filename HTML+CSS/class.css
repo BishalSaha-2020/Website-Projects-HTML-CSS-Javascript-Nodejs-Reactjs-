@@ -1,0 +1,44 @@
+/* li i{
+    color: rebeccapurple;
+} */
+
+/* .special{
+    color: 
+}
+
+br.special{
+    color:
+}
+
+br.special,i.special{
+    color: ;
+}
+
+h1{
+    color: ;
+}
+pr{
+    color: ;
+}
+define a class="something at the openning of any tag like<li class="some"> then whole thing inside the tag develop that coloror property */
+/* a {
+    color: ;
+} */
+/* h6+pr {
+    font-size: 200%;
+} */
+/* a:hover{
+    color: greenyellow;
+    text-decoration: none;
+} */
+
+li.special{
+    color: indigo;
+    background-color: black;
+    padding: 5px;
+}
+body h6+pr small.special{
+    color: blue;
+    background-color:pink ;
+    padding: 5px;
+}

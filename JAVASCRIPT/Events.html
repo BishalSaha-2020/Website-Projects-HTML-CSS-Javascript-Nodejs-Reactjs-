@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #btn{
+        padding: 15px;
+        background-color: green;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        float: left;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouseover
+    mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="par"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed hic veniam sapiente, vitae illo magni, non autem inventore quaerat eius consequatur necessitatibus veritatis aperiam. Nemo rerum unde velit illum esse porro, mollitia consequatur eos debitis voluptatibus in fugiat perspiciatis voluptatem autem quas itaque saepe. Non, odio ipsam a natus possimus fugiat minus nostrum iure expedita recusandae facilis vero dicta accusantium, molestias quibusdam at voluptas explicabo ex? Doloribus molestiae ipsum corrupti pariatur amet, aperiam eos numquam. Illum vel, libero laboriosam voluptatem suscipit ullam unde! Explicabo perferendis iusto nihil earum officiis, quidem totam necessitatibus accusamus quod architecto quas dolorum natus, hic nam eius maiores quibusdam quam, dolorem rem repellat praesentium iste non aut. Autem ipsum voluptate quae, laboriosam ullam rerum, quibusdam quidem quos architecto provident aperiam recusandae tenetur sunt? Fuga veniam in quo possimus corporis, adipisci explicabo eos, cum, consequatur blanditiis temporibus porro modi quia rem at unde ut cumque dolore vel quasi incidunt. Rem maxime quas consectetur voluptates debitis quo earum nihil laborum reiciendis et, necessitatibus error porro non tenetur repellendus beatae asperiores! Architecto debitis repellendus quisquam voluptas aut, optio, eos dolorem illo dolore explicabo sed eaque dolores fuga culpa delectus fugit qui quia amet odit porro recusandae animi temporibus. Fugiat non ad molestiae dolore deserunt, commodi consequuntur exercitationem, dolores consequatur optio delectus ut, ipsam omnis expedita. Numquam, amet magnam. Perspiciatis aliquid, delectus, saepe reprehenderit consectetur dolorum quisquam, necessitatibus sequi minima modi cum ratione.</p>
+    </div>
+    <button id="btn">show/hide  </button>
+    <script>
+         let para=document.getElementById("par");
+        //  para.addEventListener("mouseover",function run(){
+        //      alert("Mouse Inside");
+        //  });
+        para.addEventListener("mouseover",run)
+        
+        function run(){
+            alert("Mouse Inside")
+        }
+
+
+        let butt=document.querySelector("button");
+        let parag=document.getElementById("par");
+        butt.addEventListener("click",hide);
+
+    function hide(){
+        // let butt=document.getElementById("btn");
+        // let para=document.getElementById("par");
+        if (parag.style.display!="none") {
+            parag.style.display="none";
+        }
+        else{
+            parag.style.display="block";
+        }
+        
+
+    }
+</script>
+</body>
+</html>

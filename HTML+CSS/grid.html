@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns:1fr 2fr 1fr; */
+             /* grid-template-columns:repeat(4,2fr);  */
+            grid-template-columns: repeat(auto-fill,minmax(200px,10fr));
+
+            grid-gap:20px;
+            grid-auto-rows: minmax(100px,auto);
+            /* grid-auto-columns: minmax(200px,auto); */
+            column-gap: 50px;
+            row-gap: 60px;
+            
+           
+        }
+
+        .items{
+            background-color: lightcoral;
+            border-radius: 3px;
+            border: 3px green solid;
+            /* margin-top: 20px;
+            margin-right: 20px;
+            height: 150px;
+             */
+        }
+        #item-2{
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
+
+        }
+        #item-2{
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        #item-5{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+        #item-1-container{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+        #item-3{
+            /* grid-column-start: 2;
+            grid-column-end: 5; */
+            /* width: 2000px; */
+
+        }
+        #item-1-container{
+            display: grid;
+            grid-template-columns:repeat(3,12fr);
+            grid-auto-rows: minmax(50px,auto);
+
+        }
+        .nested-item{
+           border: 3px greenyellow solid;
+           border-radius: 4px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1-container"> 
+            <div class="nested-item"> dabbe mai dabba 1</div>
+            <div class="nested-item"> dabbe mai dabba 2</div>
+            <div class="nested-item"> dabbe mai dabba 3</div>
+        </div>
+        <div class="items" id="item-2">2 </div>
+        <div class="items" id="item-3" >3 </div>
+        <div class="items">4 </div>
+        <div class="items" id="item-5">5 </div>
+
+    </div>
+</body>
+</html>

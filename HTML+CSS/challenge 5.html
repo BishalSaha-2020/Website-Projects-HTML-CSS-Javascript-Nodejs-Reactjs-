@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Layout</title>
+<style>
+    body{
+         border: solid black; 
+    }
+    #flex-item-1{
+        width:20%;
+        height: 615px;
+        background-color: skyblue;
+        position: relative;
+        bottom: 10px;
+        border: solid black;
+
+    }
+    .flex-item-1{
+        display:flex ;
+        border: solid black;
+    }
+    .flex-item{
+        width: 100%;
+        height: 30px;
+       
+        
+
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        height: 618px;
+        width: 80%;
+        border: solid black;
+        float: right; 
+        position: relative;
+        bottom: 633px;
+       
+    }
+
+    #flex-item-2{
+        background-color: slateblue;
+        height: 155px;
+    }
+
+    #flex-item-3{
+        background-color: rgb(205, 90, 190);
+        height: 350px;
+    }
+
+    #flex-item-4{
+        background-color: rgb(205, 188, 90);
+        height: 150px;
+    }
+
+</style>
+
+</head>
+<body>
+    
+        <div class="flex-item-1" id="flex-item-1">Nav</div>
+        <div class="flex-container">  
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        </div>
+</body>
+</html>
